@@ -1,0 +1,141 @@
+main {
+    padding: 20px;
+    display: flex;
+    gap: 1.5rem;
+}
+
+body {
+    font-family: 'Quicksand',sans-serif ;
+    margin: 0;
+    padding: 0;
+    background-color: black;
+    color: white;
+}
+
+header {
+    display: inline;
+}
+
+footer {
+    padding: 20px;
+    color: whihte;
+    background-color: rgb(41, 40, 40);
+    text-align: center;
+    font-weight: bold;
+}
+
+nav a:hover {
+    font-weight: bold;
+}
+
+.profile header {
+    text-align: center;
+}
+.featured-image {
+    width: 100%;
+    max-height: auto;
+    object-fit: cover;
+    object-position: center;
+
+}
+.profile img {
+    width: 200px;
+}
+
+.card {
+    box-shadow: 0 8px 8px 0 rgb(184, 184, 184);
+    border-radius: 5px;
+    padding: 20px;
+}
+
+.jumbotron {
+    font-size: 20px;
+    padding: 60px;
+    background-color: black;
+    text-align: center;
+    color: white;
+    border-radius: 20px;
+    box-shadow: 2px 2px 2px 2px rgb(184, 184, 184);
+}
+
+nav ul {
+    padding-inline: 4rem;
+    display: flex;
+
+    gap: 2rem;
+}
+
+nav li {
+    list-style-type:none;
+}
+
+header.navbar-container .nav-list li a {
+    padding: 0.5rem 0.5rem;
+    border-radius: 999px;
+
+    text-decoration: none;
+    font-size: 1.05rem;
+    font-family:monospace;
+    color: black;
+    transition: all 0.2s ease-in-out;
+    font-weight: bold;
+  }
+   
+  header.navbar-container .nav-list li:hover a {
+    background-color: rgb(0, 0, 0);
+    color: white;
+  }
+
+
+nav {
+  background-color: rgb(214, 208, 208);
+  padding: 5px;
+  position: sticky;
+  top: 0%;
+}
+
+nav a {
+    font-size: 18px;
+    font-weight: 400;
+    text-decoration: none;
+    color: white ;
+}
+
+#content {
+    flex: 5;
+
+    display: flex;
+    flex-flow: column nowrap;
+    gap: 1rem 2rem;
+}
+
+aside {
+    flex: 1;
+}
+
+@media screen and (max-width: 1000px) {
+    #content, aside {
+        width: 100%;
+        padding: 0%;
+    }
+}
+@media screen and (max-width: 1200px) {
+    main {
+        flex-flow: column nowrap;
+    }
+    main aside {
+        align-self: center;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    nav ul {
+        justify-content: center;
+    }
+    main aside {
+        align-self: stretch;
+    }
+}
+* {
+    box-sizing: border-box;
+}
